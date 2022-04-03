@@ -1,0 +1,15 @@
+{
+  "name": "sinatra_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "esbuild": "^0.14.30",
+    "sass": "^1.49.11"
+  },
+  "scripts": {
+    "build": "esbuild assets/javascript/*.* --bundle --sourcemap --outdir=public/assets",
+    "build:css": "sass ./assets/stylesheets/app.sass ./public/asssets/app.css --no-source-map --load-path=node_modules"
+  }
+}
